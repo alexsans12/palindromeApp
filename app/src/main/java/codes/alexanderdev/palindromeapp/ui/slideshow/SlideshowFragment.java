@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo.ui.slideshow;
+package codes.alexanderdev.palindromeapp.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.fernanda.ppalindromo.R;
+import codes.alexanderdev.palindromeapp.R;
 
 public class SlideshowFragment extends Fragment {
 

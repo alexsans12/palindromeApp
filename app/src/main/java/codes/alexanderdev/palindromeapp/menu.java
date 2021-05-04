@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo;
+package codes.alexanderdev.palindromeapp;
 
 import android.os.Bundle;
 import android.view.View;

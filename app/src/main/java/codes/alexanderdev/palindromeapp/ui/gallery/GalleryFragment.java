@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo.ui.gallery;
+package codes.alexanderdev.palindromeapp.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,14 +12,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.fernanda.ppalindromo.R;
+import codes.alexanderdev.palindromeapp.R;
 
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);

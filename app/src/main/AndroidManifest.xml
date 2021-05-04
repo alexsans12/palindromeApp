@@ -15,7 +15,7 @@
         <activity
             android:name=".menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.palindromeApp.NoActionBar" />
+            android:theme="@style/Theme.PalindromeApp.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

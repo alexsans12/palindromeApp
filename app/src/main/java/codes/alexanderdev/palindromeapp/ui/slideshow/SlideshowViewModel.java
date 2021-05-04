@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo.ui.slideshow;
+package codes.alexanderdev.palindromeapp.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

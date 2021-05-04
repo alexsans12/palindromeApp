@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo.ui.home;
+package codes.alexanderdev.palindromeapp.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

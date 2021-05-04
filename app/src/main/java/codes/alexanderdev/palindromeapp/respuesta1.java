@@ -1,4 +1,4 @@
-package com.fernanda.ppalindromo;
+package codes.alexanderdev.palindromeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
