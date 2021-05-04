@@ -53,7 +53,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Que pena!, no es un palìndromo", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 }
