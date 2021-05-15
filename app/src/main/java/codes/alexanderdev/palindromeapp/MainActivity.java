@@ -2,6 +2,7 @@ package codes.alexanderdev.palindromeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void isPalindrome() {
+        Intent intent = new Intent(this, respuesta1.class);
         Lista lista = new Lista(),
               listaInversa = new Lista();
         String text = etText.getText().toString();
@@ -49,9 +51,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(lista.listar().equals(listaInversa.listar())) {
-            Toast.makeText(this, "Enhorabuena, es un palíndromo!", Toast.LENGTH_SHORT).show();
+            startActivity(intent);
         } else {
-            Toast.makeText(this, "Que pena!, no es un palìndromo", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, respuesta2.class);
+            startActivity(intent);
         }
 
 
