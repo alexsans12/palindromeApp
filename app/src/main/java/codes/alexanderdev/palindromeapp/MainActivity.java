@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import codes.alexanderdev.palindromeapp.lista.Lista;
 import codes.alexanderdev.palindromeapp.lista.Palabra;
 
@@ -33,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         };
 
         btnCheck.setOnClickListener(clickListener);
+
+        Intent intent = new Intent(MainActivity.this, SplashActivity.class);
+        startActivity(intent);
     }
 
     public void isPalindrome() {

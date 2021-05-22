@@ -21,4 +21,5 @@
     <string name="tv1">¿Es un palíndromo?</string>
 
     <string name="btnDatos">Informacion</string>
+    <string name="cargando">¿Es un Palindromo?</string>
 </resources>
