@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PalindromeApp</string>
+    <string name="app_name">Palindrome App</string>
     <string name="btn_iniciar">Averiguar</string>
     <string name="btn_regresar1">Regresar</string>
     <string name="btn_regresar2">Regresar</string>
@@ -18,8 +18,15 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tv1">¿Es un palíndromo?</string>
+    <string name="tv1">¿ SERÁ UN PALINDROMO ?</string>
+    <string name="tvv">"INGRESE UNA FRASE O PALABRA</string>
 
     <string name="btnDatos">Informacion</string>
-    <string name="cargando">¿Es un Palindromo?</string>
+    <string name="cargando">PALINDROME APP</string>
+    <string name="listViewAtras">Volver</string>
+
+    <string name="lstView"><center>¡ESTO ES "\n" UN PALINDROMO!</center></string>x
+    <string name="lstView2">¡QUE LASTIMA \n INTENTELO DE NUEVO!</string>
+    <string name="btnVolver">VOLVER</string>
+
 </resources>
