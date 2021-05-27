@@ -1,5 +1,13 @@
 package codes.alexanderdev.palindromeapp.lista;
 
+import android.content.Intent;
+
+import java.text.Normalizer;
+import java.util.regex.Pattern;
+
+import codes.alexanderdev.palindromeapp.respuesta1;
+import codes.alexanderdev.palindromeapp.respuesta2;
+
 public class Lista {
 
     private Nodo inicio;
@@ -82,5 +90,28 @@ public class Lista {
         }
 
         return i;
+    }
+
+    static public boolean esPalindromo(String texto) {
+        String textoVerif = unAccent(texto.toLowerCase());
+
+        Lista lista = new Lista(),
+                listaInversa = new Lista();
+
+        for (int i = 0; i < texto.length(); i++) {
+            if(Character.isLetter(textoVerif.charAt(i))) {
+                Palabra palabra = new Palabra(textoVerif.charAt(i));
+                lista.agregarAlFinal(palabra);
+                listaInversa.agregarAlInicio(palabra);
+            }
+        }
+
+        return  lista.listar().equals(listaInversa.listar());
+    }
+
+    public static String unAccent(String s) {
+        String temp = Normalizer.normalize(s, Normalizer.Form.NFD);
+        Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
+        return pattern.matcher(temp).replaceAll("");
     }
 }

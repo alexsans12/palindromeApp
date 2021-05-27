@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">Palindrome App</string>
+    <string name="app_name">¿Es un Palíndromo?</string>
     <string name="btn_iniciar">Averiguar</string>
-    <string name="btn_regresar1">Regresar</string>
-    <string name="btn_regresar2">Regresar</string>
+    <string name="btn_regresar">Regresar</string>
     <string name="btn_comprobar">Comprobar</string>
     <string name="title_activity_menu">menu</string>
     <string name="txtfrase">   </string>
