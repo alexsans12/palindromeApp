@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,11 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
                 etText.setText("");
 
-                if(Lista.esPalindromo(text)) {
-                    guardarPalabra(text);
-                    showRespuesta1Activity();
+                if(text.length() != 0) {
+                    if(Lista.esPalindromo(text)) {
+                        guardarPalabra(text);
+                        showRespuesta1Activity();
+                    } else {
+                        showRespuesta2Activity();
+                    }
                 } else {
-                    showRespuesta2Activity();
+                    etText.setError("Ingrese una palabra o frase");
                 }
             }
         });

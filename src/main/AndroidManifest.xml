@@ -18,7 +18,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SplashActivity" />
-        <activity android:name=".frase" />
         <activity android:name=".respuesta2" />
         <activity android:name=".respuesta1" />
     </application>
